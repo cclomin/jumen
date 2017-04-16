@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>巨门后台管理系统</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<link rel="shortcut icon" href="favicon.ico">
+		<link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+		<link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
+		<link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+		<link href="css/animate.css" rel="stylesheet">
+		<link href="css/style.css?v=4.1.0" rel="stylesheet">
+		<link rel="stylesheet" href="css/auto.css" />
+
+	</head>
+
+	<body class="">
+		<div class="wrapper wrapper-content animated fadeInRight">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="ibox float-e-margins">
+						<div class="ibox-title">
+							<h5>公告列表</h5>
+						</div>
+						<div class="ibox-content">
+							<div class="form-group clearfix">
+								<form class="form-inline">
+									<label class="control-label time-before">发布时间：</label>
+									<input type="text" placeholder="" id="start" class="form-control">
+									<span> - </span>
+									<input type="text" placeholder="" id="end" class="form-control">
+									<input type="text" placeholder="输入标题" id="filter" class="form-control" style="margin-left: 20px;">
+									<button class="btn btn-default btn-sm btn-search"><i class="fa fa-search"></i>&nbsp;查询</button>
+								</form>
+								<!--<div class="col-sm-2">
+                                <input placeholder="开始日期" class="form-control layer-date" id="start">
+	                            </div>
+	                            <div class="col-sm-2">
+	                                <input placeholder="结束日期" class="form-control layer-date" id="end">
+	                            </div>-->
+							</div>
+							<table class="table table-bordered text-center footable">
+								<thead>
+									<tr>
+										<th class="text-center">ID</th>
+										<th class="text-center">公告标题</th>
+										<th class="text-center">展示类型</th>
+										<th class="text-center">排序</th>
+										<th class="text-center">操作</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="gradeX">
+										<td>1</td>
+										<td>12大事件</td>
+										<td>13丰和花园</td>
+										<td>1</td>
+										<td>
+											<a href="gonggao_edit.html" class="handle"><i class="fa fa-edit"></i>修改</a>
+                                        	<a href="javascript:;" class="handle"><i class="glyphicon glyphicon-trash"></i>&nbsp;删除</a>
+										</td>
+									</tr>
+									<tr class="gradeC">
+										<td>1</td>
+										<td>13大事件</td>
+										<td>21丰和花园</td>
+										<td>1</td>
+										<td>
+											<a href="gonggao_edit.html" class="handle"><i class="fa fa-edit"></i>修改</a>
+                                        	<a href="javascript:;" class="handle"><i class="glyphicon glyphicon-trash"></i>&nbsp;删除</a>
+										</td>
+									</tr>
+									<tr class="gradeX">
+										<td>1</td>
+										<td>23大事件</td>
+										<td>12丰和花园</td>
+										<td>1</td>
+										<td>
+											<a href="gonggao_edit.html" class="handle"><i class="fa fa-edit"></i>修改</a>
+                                        	<a href="javascript:;" class="handle"><i class="glyphicon glyphicon-trash"></i>&nbsp;删除</a>
+										</td>
+									</tr>
+									<tr class="gradeX">
+										<td>1</td>
+										<td>42大事件</td>
+										<td>13丰和花园</td>
+										<td>1</td>
+										<td>
+											<a href="gonggao_edit.html" class="handle"><i class="fa fa-edit"></i>修改</a>
+                                        	<a href="javascript:;" class="handle"><i class="glyphicon glyphicon-trash"></i>&nbsp;删除</a>
+										</td>
+									</tr>
+									<tr class="gradeX">
+										<td>1</td>
+										<td>12大事件</td>
+										<td>21丰和花园</td>
+										<td>1</td>
+										<td>
+											<a href="gonggao_edit.html" class="handle"><i class="fa fa-edit"></i>修改</a>
+                                        	<a href="javascript:;" class="handle"><i class="glyphicon glyphicon-trash"></i>&nbsp;删除</a>
+										</td>
+									</tr>
+									<tr class="gradeX">
+										<td>1</td>
+										<td>12大事件</td>
+										<td>22丰和花园</td>
+										<td>1</td>
+										<td>
+											<a href="gonggao_edit.html" class="handle"><i class="fa fa-edit"></i>修改</a>
+                                        	<a href="javascript:;" class="handle"><i class="glyphicon glyphicon-trash"></i>&nbsp;删除</a>
+										</td>
+									</tr>
+									<tr class="gradeX">
+										<td>1</td>
+										<td>13大事件</td>
+										<td>13丰和花园</td>
+										<td>1</td>
+										<td>
+											<a href="gonggao_edit.html" class="handle"><i class="fa fa-edit"></i>修改</a>
+                                        	<a href="javascript:;" class="handle"><i class="glyphicon glyphicon-trash"></i>&nbsp;删除</a>
+										</td>
+									</tr>
+									<tr class="gradeX">
+										<td>1</td>
+										<td>42大事件</td>
+										<td>41丰和花园</td>
+										<td>1</td>
+										<td>
+											<a href="gonggao_edit.html" class="handle"><i class="fa fa-edit"></i>修改</a>
+                                        	<a href="javascript:;" class="handle"><i class="glyphicon glyphicon-trash"></i>&nbsp;删除</a>
+										</td>
+									</tr>
+									<tr class="gradeX">
+										<td>1</td>
+										<td>41大事件</td>
+										<td>12丰和花园</td>
+										<td>1</td>
+										<td>
+											<a href="gonggao_edit.html" class="handle"><i class="fa fa-edit"></i>修改</a>
+                                        	<a href="javascript:;" class="handle"><i class="glyphicon glyphicon-trash"></i>&nbsp;删除</a>
+										</td>
+									</tr>
+									<tr class="gradeX">
+										<td>1</td>
+										<td>14大事件</td>
+										<td>42丰和花园</td>
+										<td>1</td>
+										<td>
+											<a href="gonggao_edit.html" class="handle"><i class="fa fa-edit"></i>修改</a>
+                                        	<a href="javascript:;" class="handle"><i class="glyphicon glyphicon-trash"></i>&nbsp;删除</a>
+										</td>
+									</tr>
+									<tr class="gradeX">
+										<td>1</td>
+										<td>大事件</td>
+										<td>丰和花园</td>
+										<td>1</td>
+										<td>
+											<a href="gonggao_edit.html" class="handle"><i class="fa fa-edit"></i>修改</a>
+                                        	<a href="javascript:;" class="handle"><i class="glyphicon glyphicon-trash"></i>&nbsp;删除</a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<nav aria-label="Page navigation" class="text-center">
+						  	<ul class="pagination">
+						    	<li>
+						      		<a href="#" aria-label="Previous">
+							        	<span aria-hidden="true">&laquo;</span>
+							      	</a>
+						    	</li>
+						    	<li><a href="#">1</a></li>
+						    	<li><a href="#">2</a></li>
+						    	<li><a href="#">3</a></li>
+						    	<li><a href="#">4</a></li>
+						    	<li><a href="#">5</a></li>
+						    	<li>
+							      	<a href="#" aria-label="Next">
+							        	<span aria-hidden="true">&raquo;</span>
+							      	</a>
+						   		</li>
+						  	</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 全局js -->
+		<script src="js/jquery.min.js?v=2.1.4"></script>
+		<script src="js/bootstrap.min.js?v=3.3.6"></script>
+		<!-- Peity -->
+		<script src="js/plugins/peity/jquery.peity.min.js"></script>
+		<!-- 自定义js -->
+		<script src="js/content.js?v=1.0.0"></script>
+		<!-- iCheck -->
+		<script src="js/plugins/iCheck/icheck.min.js"></script>
+		<!-- Peity -->
+		<script src="js/demo/peity-demo.js"></script>
+   		<script src="js/plugins/footable/footable.all.min.js"></script>
+		<script src="js/plugins/layer/laydate/laydate.js"></script>
+		<script>
+			$(document).ready(function() {
+
+            $('.footable').footable();
+
+        });
+		</script>
+		<script>
+			$(document).ready(function() {
+				//日期范围限制
+				var start = {
+					elem: '#start',
+					format: 'YYYY/MM/DD',
+					//	            min: laydate.now(), //设定最小日期为当前日期
+					max: '2099-06-16', //最大日期
+					istime: false,
+					istoday: false,
+					choose: function(datas) {
+						end.min = datas; //开始日选好后，重置结束日的最小日期
+						end.start = datas //将结束日的初始值设定为开始日
+					}
+				};
+				var end = {
+					elem: '#end',
+					format: 'YYYY/MM/DD',
+					min: laydate.now(),
+					max: '2099-06-16',
+					istime: false,
+					istoday: false,
+					choose: function(datas) {
+						start.max = datas; //结束日选好后，重置开始日的最大日期
+					}
+				};
+				laydate(start);
+				laydate(end);
+			});
+		</script>
+
+	</body>
+
+</html>

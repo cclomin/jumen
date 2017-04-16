@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>巨门后台管理系统</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<link rel="shortcut icon" href="favicon.ico">
+		<link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+		<link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
+		<link href="css/animate.css" rel="stylesheet">
+    	<link rel="stylesheet" type="text/css" href="css/plugins/wangEditor/wangEditor.css" />
+		<link href="css/style.css?v=4.1.0" rel="stylesheet">
+		<link rel="stylesheet" href="css/auto.css" />
+
+	</head>
+
+	<body class="">
+		<div class="wrapper wrapper-content animated fadeInRight">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="ibox float-e-margins">
+						<div class="ibox-title">
+							<h5>失物招领详情</h5>
+						</div>
+						<div class="ibox-content">
+							<div class="clearfix">
+								<a href="javascript:history.back(-1)" class="pull-left back">返回</a>
+							</div>
+							<table class="table table-bordered align-table" style="width: 75%; margin: 0 auto;">
+								<tbody>
+									<tr>
+										<td width="20%">业主姓名</td>
+										<td>帅哥</td>
+									</tr>
+									<tr>
+										<td>微信号</td>
+										<td>shuaige520</td>
+									</tr>
+									<tr>
+										<td>发布时间</td>
+										<td><span class="">2017-07-07 12:13:14</span></td>
+									</tr>
+									<tr>
+										<td>内容</td>
+										<td>
+											<div id="editor-container" class="">
+										        <div id="editor-trigger"><p>请输入内容</p></div>
+										        <!-- <textarea id="editor-trigger" style="display:none;">
+										            <p>请输入内容...</p>
+										        </textarea> -->
+										    </div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="text-center" style="margin-top: 20px; color: #32d6e5;">
+								<button class="btn btn-m-w btn-white">保存</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 全局js -->
+		<script src="js/jquery.min.js?v=2.1.4"></script>
+		<script src="js/bootstrap.min.js?v=3.3.6"></script>
+		<!-- Peity -->
+		<script src="js/plugins/peity/jquery.peity.min.js"></script>
+		<!-- 自定义js -->
+		<script src="js/content.js?v=1.0.0"></script>
+		<!-- iCheck -->
+		<script src="js/plugins/iCheck/icheck.min.js"></script>
+		<!-- Peity -->
+		<script src="js/demo/peity-demo.js"></script>
+		<!-- wangEditor -->
+		<script src="js/plugins/wangEditor/wangEditor.js"></script>
+		<script type="text/javascript">
+
+	        var editor = new wangEditor('editor-trigger');
+	
+	        // 上传图片
+	        editor.config.uploadImgUrl = '/upload';
+	
+	        // 自定义上传事件
+	        editor.config.uploadImgFns.onload = function (resultText, xhr) {
+	            // resultText 服务器端返回的text
+	            // xhr 是 xmlHttpRequest 对象，IE8、9中不支持
+	
+	            // 上传图片时，已经将图片的名字存在 editor.uploadImgOriginalName
+	            var originalName = editor.uploadImgOriginalName || '';  
+	            alert(resultText);
+	            // 如果 resultText 是图片的url地址，可以这样插入图片：
+	            editor.command(null, 'insertHtml', '<img src="' + resultText + '" alt="' + originalName + '" style="max-width:100%;"/>');
+	            // 如果不想要 img 的 max-width 样式，也可以这样插入：
+	            // editor.command(null, 'InsertImage', resultText);
+	        };
+	
+	        editor.create();
+	    </script>
+		<script>
+			$(function(){
+				var windowHeight = $(window).height();
+				var $ibox = $('.ibox');
+				$ibox.height(windowHeight - 62);
+			});
+		</script>
+		<script src="js/plugins/layer/layer.min.js"></script>
+		<script>
+			$('.btn').on('click', function(){
+			  	layer.open({
+  					title: '提示',
+  					content: '保存成功',
+  					closeBtn: 0,
+				  	extend: 'myskin/style.css', //加载您的扩展样式
+				  	skin: 'layer-ext-yourskin'
+				});
+			});
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>巨门后台管理系统</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <link rel="shortcut icon" href="favicon.ico"> <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
+    <link href="css/plugins/footable/footable.core.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css?v=4.1.0" rel="stylesheet">
+   	<link rel="stylesheet" href="css/auto.css" />
+
+</head>
+
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="ibox">
+                        <div class="ibox-title">
+                            <h5>活动列表</h5>
+                        </div>
+                        <div class="ibox-content">
+                        	<div class="form-group clearfix">
+								<form class="form-inline">
+									<label class="control-label time-before">发布时间：</label>
+									<input type="text" placeholder="" id="start" class="form-control">
+									<span> - </span>
+									<input type="text" placeholder="" id="end" class="form-control">
+                            		<input type="text" class="form-control input-sm" id="filter" placeholder="输入业主姓名、微信号">
+									<button class="btn btn-default btn-sm btn-search"><i class="fa fa-search"></i>&nbsp;查询</button>
+								</form>
+								<!--<div class="col-sm-2">
+                                <input placeholder="开始日期" class="form-control layer-date" id="start">
+	                            </div>
+	                            <div class="col-sm-2">
+	                                <input placeholder="结束日期" class="form-control layer-date" id="end">
+	                            </div>-->
+							</div>
+
+                            <table class="footable table table-bordered text-center" data-page-size="8" data-filter=#filter>
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">ID</th>
+                                        <th class="text-center">活动标题</th>
+                                        <th class="text-center">开展区域</th>
+                                        <th class="text-center">内容</th>
+                                        <th class="text-center">发布时间</th>
+                                        <th class="text-center">操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="gradeX">
+                                        <td>1</td>
+                                        <td>帅哥</td>
+                                        <td>shuaige520</td>
+                                        <td class="center">捡到一条狗，长这样的。看图<img src="css/patterns/header-profile-skin-1.png" width="40" height="30"/></td>
+                                        <td class="center">2017-12-12 12:12:12</td>
+                                        <td class="center">
+                                        	<a href="add_huodong.html" class="handle">查看详情</a>
+                                        	<a href="javascript:;" class="handle"><i class="glyphicon glyphicon-trash"></i>&nbsp;删除</a>
+                                        </td>
+                                    </tr>
+                                    <tr class="gradeC">
+                                        <td>4</td>
+                                        <td>张三</td>
+                                        <td>zhangsan</td>
+                                        <td class="center">捡到一条狗，长这样的。看图<img src="css/patterns/header-profile-skin-1.png" width="40" height="30"/></td>
+                                        <td class="center">2017-12-12 12:12:12</td>
+                                        <td class="center">
+                                        	<a href="add_huodong.html" class="handle">查看详情</a>
+                                        	<a href="javascript:;" class="handle"><i class="glyphicon glyphicon-trash"></i>&nbsp;删除</a>
+                                        </td>
+                                    </tr>
+                                    <tr class="gradeX">
+                                        <td>3</td>
+                                        <td>李四</td>
+                                        <td>lisi</td>
+                                        <td class="center">捡到一个女朋友，好开心啊<img src="css/patterns/header-profile-skin-1.png" width="40" height="30"/></td>
+                                        <td class="center">2017-12-12 12:12:12</td>
+                                        <td class="center">
+                                        	<a href="add_huodong.html" class="handle">查看详情</a>
+                                        	<a href="javascript:;" class="handle"><i class="glyphicon glyphicon-trash"></i>&nbsp;删除</a>
+                                        </td>
+                                    </tr>
+                                    <tr class="gradeX">
+                                        <td>2</td>
+                                        <td>王五</td>
+                                        <td>wangwu</td>
+                                        <td class="center">捡到一个男朋友，好开心啊<img src="css/patterns/header-profile-skin-1.png" width="40" height="30"/></td>
+                                        <td class="center">2017-12-21 12:12:12</td>
+                                        <td class="center">
+                                        	<a href="add_huodong.html" class="handle">查看详情</a>
+                                        	<a href="javascript:;" class="handle"><i class="glyphicon glyphicon-trash"></i>&nbsp;删除</a>
+                                        </td>
+                                    </tr>
+                                    <tr class="gradeX">
+                                        <td>5</td>
+                                        <td>帅哥</td>
+                                        <td>shuaige520</td>
+                                        <td class="center">捡到一条狗，长这样的。看图<img src="css/patterns/header-profile-skin-1.png" width="40" height="30"/></td>
+                                        <td class="center">2017-12-12 12:12:12</td>
+                                        <td class="center">
+                                        	<a href="add_huodong.html" class="handle">查看详情</a>
+                                        	<a href="javascript:;" class="handle"><i class="glyphicon glyphicon-trash"></i>&nbsp;删除</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <nav aria-label="Page navigation" class="text-center">
+							  	<ul class="pagination">
+							    	<li>
+							      		<a href="#" aria-label="Previous">
+							        		<span aria-hidden="true">&laquo;</span>
+							      		</a>
+							    	</li>
+							    	<li><a href="#">1</a></li>
+							    	<li><a href="#">2</a></li>
+							    	<li><a href="#">3</a></li>
+							    	<li><a href="#">4</a></li>
+							    	<li><a href="#">5</a></li>
+							    	<li>
+							      	<a href="#" aria-label="Next">
+							        	<span aria-hidden="true">&raquo;</span>
+							      	</a>
+							   		</li>
+							  	</ul>
+							</nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- 全局js -->
+    <script src="js/jquery.min.js?v=2.1.4"></script>
+    <script src="js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="js/plugins/footable/footable.all.min.js"></script>
+
+    <!-- 自定义js -->
+    <script src="js/content.js?v=1.0.0"></script>
+    <script>
+		$(function(){
+			var windowHeight = $(window).height();
+			var $ibox = $('.ibox');
+			$ibox.height(windowHeight - 62);
+		});
+	</script>
+    <script>
+        $(document).ready(function() {
+
+            $('.footable').footable();
+
+        });
+
+    </script>
+
+    
+    
+
+</body>
+
+</html>

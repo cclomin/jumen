@@ -1,0 +1,86 @@
+.clearfix:after {content:"\200B"; display:block; height:0;clear:both;}
+.auto-table{
+	padding: 0;
+}
+.nav{
+	font-family: "微软雅黑";
+}
+.auto-table .table{
+	margin-bottom: 0;
+}
+.auto-table .table td{
+	text-align: center;
+    padding: 30px 0;
+    box-sizing: border-box;
+}
+.auto-table .userIcon{
+	margin-bottom: 10px;
+	display: inline-block;
+	width: 40%;
+	border-radius: 50%;
+}
+.ibox-title h3{
+	padding: 0 10px;
+	line-height: 0px;
+	text-align: center;
+}
+.time-before{
+	line-height: 30px;
+}
+.btn-search{
+	margin-left: 30px;
+	margin-bottom: 0!important;
+	background-color: #32d6e5;
+	color: #fff!important;
+}
+.btn-search:hover,
+.btn-search:focus{
+	background: #32D6f6;
+	color: #fff!important;
+}
+.handle{
+	color: #4edcea;
+}
+.handle:nth-child(1){
+	margin-right: 15px;
+}
+.undispose{
+	color: #ff0000;
+}
+.align-table tr td:nth-of-type(1){
+	text-align: right;
+}
+.align-table tr td:nth-of-type(2){
+	text-align: center;
+}
+.btn-m-w{
+	width: 80px;
+}
+.btn-detail{
+	color: #33d7e3;
+}
+.daochu{
+	color: #32d6e5!important;
+}
+textarea{
+	resize: none;
+}
+.layui-layer-btn0{
+	background: #32D6E5!important;
+	border-color: #32D6F6!important;
+}
+.back{
+	width: 45px;
+	text-align: right;
+	color: #33D7E3;
+	background: url(../images/back.png) no-repeat left center;
+	background-size: 15px 12px;
+}
+.btn-upload{
+	padding-top: 15px;
+	margin-bottom: 15px;
+	border-top: 1px solid #eee;
+}
+.btn-upload .btn{
+	width: 70px;
+}
